@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Today</title>
+</head>
+<body>
+    <div class="left">
+        <div class="logobox">
+            <img class="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+            <p>Odin</p>
+        </div>
+        </div>
+    <div class="right">
+        <div class="right_top">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up now to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <form class="right_form" action="#" method="get"> 
+            <div class="form_top">
+                <div class="form-row">
+                    <div class="first_name">
+                        <div>
+                            <lable for="first_name">First Name:</lable>
+                        </div>
+                        <input type="text" id="first_name" minlength="2" maxlength="30">
+                    </div>
+                    <div>
+                        <div>  
+                            <lable for="last_name">Last Name:<span aria-label="required">*</span></lable>
+                        </div>
+                        <input type="text" id="last_name" minlength="2" maxlength="30" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div>
+                        <div>
+                            <lable for="user_email">Email Address:<span aria-label="required">*</span></lable>
+                        </div>
+                        <input type="email" id="user_email" name="email" required>
+                    </div>
+                    <div> 
+                        <div>
+                            <lable for="phone">Phone:<span aria-label="required">*</span></lable>
+                        </div>
+                        <input type="number" id="phone" name="phone" required>
+                    </div>  
+                        
+                </div>
+                <div class="form-row">
+                    <div>
+                        <div>
+                            <lable for ="user_password">Password:<span aria-label="required">*</span></lable>
+                        </div>
+                        <input type="password" id="user_password" name="password" required>
+                    </div>
+                    <div>
+                         <div>
+                            <lable for ="confirm_password">Confirm Password:<span aria-label="required">*</span></lable>
+                        </div>   
+                        <input type="password" id="confirm_password" name="password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form_bottom">
+                <button type="submit">Create Account</button>
+                <div>Already have an account? Log in</div>
+            </div>
+        </form>   
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,162 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Verdana', sans-serif
+}
+
+body {
+    display:flex;
+    justify-content: space-between;
+    flex:auto;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    min-width: 40vw;
+    background-image: url("https://images.unsplash.com/photo-1669287731461-bd8ce3126710?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-color: black;
+}
+
+.logo {
+    width: 150px;
+
+}
+
+.logobox {
+    position: relative;
+    top: 500px;
+}
+
+.logobox {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 50%;
+    color: white;
+    font-size: 50px;
+}
+
+.right {
+    display:flex;
+    flex-direction: column;
+}
+
+.right_top, .form_top, .form_bottom {
+    padding: 5vh 10vw;
+}
+.right_top {
+    color: grey;
+    height: 40vh;
+    background-color: rgb(0, 0, 0);
+    font-size: 32px;
+}
+
+.form-row {
+    display: flex;
+    justify-content:space-between;
+
+}
+
+
+.form_top {
+    position: relative;
+    z-index: 10;
+    height: 30vh;
+    background-color: rgb(240, 230, 218);
+    box-shadow: 0px 0px 50px 1px black;
+
+}
+
+.form_bottom {
+    height: 30vh;
+    background-color: rgb(145, 145, 145);
+}
+
+input {
+    width: 300px;
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  
+input:invalid {
+    border-color: red;
+  }
+  
+input:valid {
+    border-color: green;
+  }
+
+button {
+    font-size: 16px;
+    background-color: coral;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid coral;
+}
+
+button:hover {
+    font-size: 16px;
+    color: coral;
+    background-color: rgb(255, 253, 253);
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid coral;
+}
+
+button:active {
+    font-size: 16px;
+    color: coral;
+    background-color: rgb(255, 253, 253);
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(247, 247, 247);
+}
+
+
+@media only screen and (max-width: 700px)  {
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+.logobox {
+    top: 0px;
+}
+
+
+.form-row {
+    flex-direction: column;
+}
+
+.right_top {
+    font-size: 20px;
+    padding: 20px;
+    max-height: 20vh;
+}
+
+.form_top {
+    height: 40vh;
+    padding: 10px 50px;   
+}
+
+.form_bottom {
+    height: 15vh;
+    padding: 10px 50px;
+}
+
+}
